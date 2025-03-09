@@ -1,0 +1,200 @@
+// EX 1: Troca de valores entre variáveis sem utilizar uma variável temporária.
+let a = 42;
+let b = 7;
+let c = 3;
+let d = 0;
+d = a;
+a = b;
+b = c;
+c = d;
+console.log(a, b, c);
+console.log("Fim do ex 1");
+
+// EX 2: Cálculo da nota final com pesos diferentes.
+let n1 = 8;
+let ai = 8.5;
+let af1 = 9;
+let af2 = 8.5;
+let af3 = 7;
+let af4 = 10;
+let af = (2*af1+2*af2+3*af3+3*af4)/10;
+let n2 = (ai+af)/2;
+let nf = (n1+n2)/2;
+console.log(nf);
+console.log("Fim do ex 2");
+
+// EX 3.1: Diferença e multiplicações entre dois números.
+let e = 42;
+let f = 7;
+let dif = e-f;
+let multmaior = e*2;
+let multmenor = f*3;
+console.log(dif, multmaior, multmenor);
+console.log("Fim do ex 3.1");
+
+// EX 3.2: Diferença e multiplicações entre dois números decimais.
+let g = 2.7182;
+let h = 3.1415;
+let dif2 = h-g;
+let multmaior2 = h*2;
+let multmenor2 = g*3;
+console.log(dif2, multmaior2, multmenor2);
+console.log("Fim do ex 3.2");
+
+// EX 4: Tabuada do número 7 e soma dos resultados.
+let i = 7;
+let multip4 = 0;
+let result4 = 0;
+let soma4 = 0;
+while(multip4<10) {
+    multip4 = multip4+1;
+    result4 = i*multip4;
+    console.log(result4);
+    soma4 = soma4 + result4;
+}
+console.log(soma4);
+console.log("Fim do ex 4");
+
+// EX 5: Comparação de pontuação entre times.
+let timeA = 0;
+let timeB = 1479;
+if (timeA > timeB){
+  console.log("Time A venceu");
+} else if (timeA < timeB){
+  console.log("Time B venceu");
+} else {
+  console.log("Empatou");
+}
+console.log("Fim do Ex 5");
+
+// EX 6: Comparação entre áreas de um retângulo e um círculo.
+let lado1 = 20;
+let lado2 = 30;
+let raio = 15;
+let pi = 3.1415;
+let retangulo = lado1*lado2;
+let circulo = pi*(raio*raio);
+if(retangulo > circulo){
+  console.log("Compre o bolo retangular");
+} else{
+  console.log("Compre o bolo circular");
+}
+console.log("Fim do Ex 6");
+
+// EX 7: Multiplicação condicional de um número.
+let num = 42;
+if(num > 7){
+  num = num * 2;
+} else if(num < 3){
+  num = num * 3;
+} else{
+  num = num / 2;
+}
+console.log(num);
+console.log("Fim do Ex 7");
+
+// EX 8: Escolha de filme baseada na idade.
+let idade = 19;
+if (idade < 5){
+  console.log("Carros");
+} else if (idade >= 5 && idade < 10){
+  console.log("Frozen");
+} else if(idade >= 10 && idade < 15){
+  console.log("Xerek");
+} else{
+  console.log("Rei Leão");
+}
+console.log("Fim do Ex 8");
+
+// EX 9: Identificação do maior número entre três variáveis.
+let x = 18;
+let y = 69;
+let z = 10;
+if(x > y && x > z){
+  console.log(x);
+} else if(y > x && y > z){
+  console.log(y);
+} else{
+  console.log(z);
+}
+console.log("Fim do Ex 9");
+
+// EX 10: Identificação da cor do semáforo.
+let farol = 2;
+if(farol == 0){
+  console.log("Vermelho, Pare");
+} else if (farol == 1){
+  console.log("Amarelo, Atenção");
+} else if (farol == 2){
+  console.log("Verde, Continue");
+}
+console.log("Fim do Ex 10");
+
+// EX 11: Contagem crescente com do-while.
+let contador = 0;
+do {
+  contador = contador+1;
+  console.log(contador);
+} while (contador < 6);
+console.log("Fim do Ex 11");
+
+// EX 12: Contagem decrescente com do-while.
+let b1 = 12;
+do {
+    b1 = b1-1;
+    console.log(b1);
+} while (b1 >= 7);
+console.log("Fim do Ex 12");
+
+// EX 13: Soma de números em um intervalo com while.
+let soma = 10;
+let resultado = 0;
+while(soma < 30){
+  resultado = soma + resultado;
+  soma = soma +1;
+}
+console.log(resultado);
+console.log("Fim do Ex 13");
+
+// EX 14: Soma de valores com incremento de 7.
+let soma2 = 13;
+let result2 = 0;
+while (soma2 < 37){
+  result2 = soma2 + result2;
+  soma2 = soma2 + 7;
+  console.log(soma2, result2);
+}
+console.log("Fim do Ex 14");
+
+// EX 15: Loop de decremento e incremento de variáveis.
+let c1 = 21;
+let d1 = 7;
+while (c1 >= d1){
+  c1 = c1 - 3;
+  d1 = d1 + 2;
+  console.log(c1, d1);
+}
+console.log("Fim do Ex 15");
+
+// EX 16: Identificação de números pares dentro de um intervalo.
+let num2 = 7;
+while (num2 <= 21){
+  if(num2%2 == 0){
+    console.log(num2);
+  }
+  num2 = num2+1;
+}
+console.log("Fim do Ex 16");
+
+// EX 17: Algoritmo do MDC (Máximo Divisor Comum) usando subtração.
+let f1 = 37;
+let g1 = 31;
+while (f1 != g1){
+  if (f1 > g1){
+    f1 = f1 - g1;
+  } else{
+    g1 = g1 - f1;
+  }
+  console.log(f1, g1);
+}
+console.log("Fim do Ex 17");

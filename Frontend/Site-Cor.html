@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cor </title>
+    <style>
+        body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; transition: background 0.5s; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; border: none; background: #222; color: white; border-radius: 5px; }
+        #colorCode { margin-top: 10px; font-size: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <button onclick="changeColor()">Gerar Cor Aleatória</button>
+    <p id="colorCode">Clique no botão para gerar uma cor</p>
+
+    <script>
+        function changeColor() {
+            const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+            document.body.style.background = randomColor;
+            document.getElementById('colorCode').textContent = `Cor: ${randomColor}`;
+        }
+    </script>
+</body>
+</html>
