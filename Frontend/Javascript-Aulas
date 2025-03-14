@@ -198,3 +198,51 @@ while (f1 != g1){
   console.log(f1, g1);
 }
 console.log("Fim do Ex 17");
+
+// EX 18 - Soma de múltiplos de 7 entre 13 e 78
+let somaMulti = 0;
+for (let multi = 13; multi <= 78; multi += 7) {
+  somaMulti += multi;
+  console.log(somaMulti, multi);
+}
+console.log("Fim do Ex 18");
+
+// EX 19 - Tabuada do 7
+for (let tab = 1; tab <= 10; tab++) {
+  let resultado = 7 * tab;
+  console.log(tab, 7, resultado);
+}
+console.log("Fim do Ex 19");
+
+// EX 20 - Verificar números pares entre 7 e 42
+for (let x = 7; x <= 42; x++) {
+  if (x % 2 == 0) {
+    console.log("É PAR", x);
+  }
+}
+console.log("Fim do Ex 20");
+
+// EX 21 - Tabuadas de 1 a 10
+for (let multi = 1; multi <= 10; multi++) {
+  for (let x = 1; x <= 10; x++) {
+    let resultado = multi * x;
+    console.log(resultado);
+  }
+}
+console.log("Fim do Ex 21");
+
+// EX 22 - Números primos até 89
+let numPrimo = 89;
+for (let x = 2; x <= numPrimo; x++) {
+  let primo = true;
+  for (let i = 2; i < x; i++) {
+    if (x % i === 0) {
+      primo = false;
+      break;
+    }
+  }
+  if (primo) {
+    console.log("Número primo:", x);
+  }
+}
+console.log("Fim do Ex 22");
